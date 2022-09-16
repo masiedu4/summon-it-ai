@@ -1,3 +1,5 @@
+import Header from "./components/Header/Header";
+
 /**
  * @description      :
  * @author           : Michael
@@ -10,11 +12,16 @@
  * - Author          : Michael
  * - Modification    :
  **/
+const title = "SummonIt News AI";
+const description =
+  "Feeling too lazy to use your keyboard before reading the news? Call it up!";
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <main className="flex justify-center p-8">
+      <div>
+        <Header title={title} description={description} />
+      </div>
+    </main>
   );
 }
 
